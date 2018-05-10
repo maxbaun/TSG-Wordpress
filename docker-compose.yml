@@ -1,0 +1,36 @@
+version: '3.1'
+services:
+  mysql:
+    environment:
+      - MYSQL_DATABASE=tsg
+      - MYSQL_USER=tsg
+      - MYSQL_PASS=tsg
+    image: tutum/mysql:latest
+    volumes:
+      - db_data:/var/lib/mysql
+
+  web:
+    image: wordpress:latest
+    environment:
+      - WORDPRESS_DB_NAME=tsg
+      - WORDPRESS_DB_USER=tsg
+      - WORDPRESS_DB_PASSWORD=tsg
+      - WORDPRESS_DEBUG="true"
+    volumes:
+      - /vagrant/wp-content/plugins:/var/www/html/wp-content/plugins
+      - /vagrant/wp-content/themes:/var/www/html/wp-content/themes
+    ports:
+      - 80:80
+    links:
+      - mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 10001:80
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: G3TIbvjNhbzb
+
+volumes:
+    db_data:
