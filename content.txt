@@ -1,0 +1,139 @@
+spacing unit: 17.5px
+
+Hero (everypage)
+{
+	image: Wordpress Featured Image, (1440 x 650 // 2880 x 1300)
+	content: WYSIWYG
+		- h1 for the title
+		- IF there is a subtitle, then render an :after on the h1 (154px desktop 75% mobile)
+		- h3 for subtitle
+		- a for a cta
+		- if the content is not equal to '' then make sure there is an overlay
+}
+
+Featured Video (home)
+{
+	thumbnail: Image
+	vimeoId: Text
+}
+
+Page Description (all pages)
+{
+	content: Flexible Content
+		layout_awards
+		{
+			gallery: Gallery
+		}
+		layout_content
+		{
+			icon: Select dropdown of all icons
+			header: WYSIWYG
+				- h1 for title
+				- h3 for subtitle
+			content: WYSIWYG
+				- p tags for body
+			media: Select
+				0 : None
+				video : Video
+				image : Image
+			video: Group (if media === video) {
+				thumbnail: Image
+				vimeoId: Text
+			}
+			image: Image (if media === image)
+		}
+}
+
+Flexible Content (service pages)
+{
+	section_awards {
+		title: Text
+		images: Gallery
+	}
+	section_slant {
+		content_align: Select
+			left : Left
+			right : Right
+		slant_direction: Select
+			leftToRight : Left To Right
+			rightToLeft : Right To Left
+		disable_slant_top: Boolean
+		disable_slant_bottom: Boolean
+		image: Image
+		content: Group {
+			icon: Select dropdown of all icons
+			header: WYSIWYG
+				- h2 for title
+			content: WYSIWYG
+				- p tags for body
+			links: Repeater {
+				links: Link
+			}
+		}
+	}
+	section_facts {
+		header: WYSIWYG
+			- h2 for title
+		facts: Repeater {
+			icon: Select dropdown of all icons (only render if set)
+			text: Textarea
+		}
+		link: Link
+	}
+	section_content {
+		vertical_center: Boolean
+		columns: {
+			column: Flexible Content {
+				layout_image: {
+					image: Image
+				}
+				layout_video: {
+					thumbnail: Image
+					videoId: Text
+				}
+				layout_content: {
+					icon: Select list of icons (only render if set)
+					title: WYSIWYG
+					content: Flexible Content {
+						layout_carousel: {
+							slides: Repeater {
+								title: Text
+								content: WYSIWYG
+							}
+						}
+						layout_text: {
+							content: WYSIWYG
+						}
+					}
+					links: Repeater {
+						link: Link
+					}
+				}
+			}
+		}
+
+	}
+	section_featured {
+		content_align: (Select)
+			left : Left
+			right : Right
+		image: Image
+		content: Group {
+			header: WYSIWYG
+				- h2 for title
+			content: WYSIWYG
+				- p tags for body
+			links: Link
+		}
+	}
+	section_service_blocks {
+		header: WYSIWYG
+			- h2 for title
+		blocks: Repeater {
+			image: Image
+			content: WYSIWYG
+				- h4 for title
+				- p for body copy
+		}
+	}
+}
