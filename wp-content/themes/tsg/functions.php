@@ -3,8 +3,10 @@
 namespace TSG;
 
 require_once(__DIR__ . '/lib/setup.php');
+require_once(__DIR__ . '/lib/options.php');
 
 new Setup();
+new Options();
 
 add_filter('acf/format_value/type=image', function($value, $post_id, $field) {
     if (empty($value)) {
