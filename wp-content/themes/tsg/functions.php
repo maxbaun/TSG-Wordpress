@@ -81,7 +81,7 @@ add_filter('acf/format_value/type=link', function($value, $post_id, $field) {
     return $value;
 }, 100, 3);
 
-function add_menu_order_to_return() {
+add_action('rest_api_init', function() {
 	register_rest_field(
 		array('dj'), // add to these post types
 		'menu_order', // name of field
@@ -91,6 +91,4 @@ function add_menu_order_to_return() {
 			}
 		)
 	);
-}
-
-add_action('rest_api_init', 'add_menu_order_to_return');
+});
