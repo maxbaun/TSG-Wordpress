@@ -1,5 +1,5 @@
 <?php
 
 /*
- * Template Name: Venue Template
+ * Template Name: Vendor Template
  * /
