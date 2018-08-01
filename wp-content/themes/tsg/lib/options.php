@@ -26,6 +26,12 @@ class Options
 			));
 
 			acf_add_options_sub_page(array(
+				'page_title' 	=> 'Vendor Settings',
+				'menu_title'	=> 'Vendor Settings',
+				'parent_slug'	=> 'theme-general-settings',
+			));
+
+			acf_add_options_sub_page(array(
 				'page_title' 	=> 'Footer Settings',
 				'menu_title'	=> 'Footer Settings',
 				'parent_slug'	=> 'theme-general-settings',
