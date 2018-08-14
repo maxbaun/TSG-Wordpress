@@ -35,6 +35,7 @@ class API
 		foreach ($value as $v) {
 			$v->featured_media = wp_get_attachment_image_url(get_post_thumbnail_id($v->ID), 'full');
 			$v->url = get_permalink($v);
+			$v->acf = get_fields($v);
 			$newValues[] = $v;
 		}
 
