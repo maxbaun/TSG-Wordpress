@@ -53,7 +53,7 @@ class Transform
 			return null;
 		}
 		$imgMeta = self::transformImage($img);
-		$imgUrl = array('url' => wp_get_attachment_url($imgId));
+		$imgUrl = array('id' => $imgId, 'url' => wp_get_attachment_url($imgId));
 
 		return array_merge($imgMeta, $imgUrl);
 	}
