@@ -16,7 +16,7 @@ class Venues
 			'post_type' => 'venue',
 			'orderby' => 'title',
 			'order' => 'ASC',
-			'posts_per_page' => $perPage
+			'posts_per_page' => -1
 		));
 
 		$data = array();
