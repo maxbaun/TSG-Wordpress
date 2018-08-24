@@ -112,17 +112,12 @@ class ApiPage extends Component {
 	}
 
 	getPage() {
-		const data = {};
-		const slug = this.getSlug();
-
-		if (slug) {
-			data.slug = slug;
-		}
-
 		this.props.actions.pageGet({
 			fetch: this.fetch,
 			route: this.props.apiRoute,
-			data
+			data: {
+				slug: this.getSlug()
+			}
 		});
 	}
 
@@ -161,7 +156,7 @@ class ApiPage extends Component {
 	}
 
 	getSlug() {
-		return this.props.match.params && this.props.match.params.slug ? this.props.match.params.slug : null;
+		return this.props.match.params && this.props.match.params.slug ? this.props.match.params.slug : 'home';
 	}
 
 	getCurrentData() {
