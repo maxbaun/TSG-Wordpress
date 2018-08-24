@@ -1,0 +1,42 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+
+.section {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	min-height: 0;
+	opacity: 0;
+	transform: translateY(5px);
+	transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+
+	// @include tabletUp {
+	// 	min-height: 400px;
+	// }
+}
+
+.sectionActive {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.sectionInner {
+	padding: 40px 0;
+	width: 100%;
+
+	@include tabletUp {
+		padding: 50px 0;
+	}
+
+	@include desktopUp {
+		padding: 60px 0;
+	}
+}
+
+.video {
+	margin-top: 25px;
+
+	@include tabletUp {
+		margin-top: 57px;
+	}
+}

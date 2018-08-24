@@ -1,0 +1,19 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+@import '../utils/section';
+
+.wrap {
+	max-width: $containMedium;
+	margin: 0 auto;
+}
+
+.content {
+	position: relative;
+}
+
+.loader {
+	@include absoluteFull;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}

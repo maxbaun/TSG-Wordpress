@@ -1,0 +1,39 @@
+@import './responsive.scss';
+
+@mixin noList {
+	list-style: none;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+@mixin absoluteFull {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+@mixin flexCenter {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+@mixin imgRetina($image, $extension, $width, $height, $position: center, $repeat: no-repeat) {
+	background: url($image+'.'+$extension) $repeat $position;
+
+	@media screen and (-webkit-min-device-pixel-ratio: 2),
+		screen and (min--moz-device-pixel-ratio: 2),
+		screen and (-moz-min-device-pixel-ratio: 2),
+		screen and (-o-min-device-pixel-ratio: 2/1),
+		screen and (min-device-pixel-ratio: 2),
+		screen and (min-resolution: 192dpi),
+		screen and (min-resolution: 2dppx) {
+		background: url($image+'@2x'+'.'+$extension) $repeat $position;
+		background-size: $width $height;
+	}
+}

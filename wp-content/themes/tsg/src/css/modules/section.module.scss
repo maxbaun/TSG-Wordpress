@@ -1,0 +1,19 @@
+@import '../utils/mixins.scss';
+
+.section {
+	position: relative;
+	opacity: 0;
+	transition: opacity 0.15s ease-in-out, clip-path 0.1s ease-in-out, margin 0.1s ease-in-out;
+	z-index: 1;
+}
+
+.pageDescription {
+	.inner {
+		@include imgRetina('../../img/splash-color', 'png', 451px, 832px, top right);
+	}
+}
+
+.wrap {
+	overflow: hidden;
+	position: relative;
+}

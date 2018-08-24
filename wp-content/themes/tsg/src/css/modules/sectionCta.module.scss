@@ -1,0 +1,90 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+@import '../utils/section';
+
+.section {
+	@include imgRetina('../../img/BG-watercolor', 'png', 527px, 844px, top left);
+	padding: 34px 0;
+
+	@include tabletUp {
+		padding: 50px 0 80px;
+	}
+
+	@include desktopUp {
+		padding: 68px 0 102px;
+	}
+}
+
+.boxes {
+	@include noList();
+
+	@include desktopUp {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	li {
+		margin: 0 auto 30px;
+		max-width: 560px;
+		width: 100%;
+		position: relative;
+
+		@include desktopUp {
+			margin: 0;
+			width: 48%;
+		}
+
+		@include widescreen {
+			width: 45%;
+		}
+
+		&::before {
+			@include desktopUp {
+				content: '';
+				display: block;
+				padding-top: 80%;
+			}
+		}
+	}
+}
+
+.box {
+	background-color: $white;
+	box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+.boxInner {
+	padding: 22.5px 28px;
+	position: relative;
+	text-align: center;
+
+	@include desktopUp {
+		@include absoluteFull();
+		padding: 30px 41px;
+	}
+
+	@include widescreen {
+		padding: 45px 56px;
+	}
+}
+
+.boxContent {
+	margin-bottom: 39px;
+}
+
+.boxButton {
+	@include desktopUp {
+		position: absolute;
+		left: 0;
+		margin: 0 auto;
+		right: 0;
+	}
+
+	@include desktopUp {
+		bottom: 30px;
+	}
+
+	@include widescreen {
+		bottom: 45px;
+	}
+}

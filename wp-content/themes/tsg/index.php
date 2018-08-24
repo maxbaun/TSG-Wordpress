@@ -1,3 +1,3 @@
-<?php
-
-header('Location: http://localhost:8000');
+<?php get_header(); ?>
+<div id="app"></div>
+<?php wp_footer(); ?>

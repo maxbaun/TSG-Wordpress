@@ -1,0 +1,277 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.icon {
+	margin-bottom: 15px;
+	text-align: center;
+
+	@include tabletUp {
+		margin-bottom: 20px;
+	}
+
+	span {
+		color: $pink;
+		font-size: 50px;
+		line-height: 50px;
+
+		@include tabletUp {
+			font-size: 75px;
+			line-height: 75px;
+		}
+	}
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 25px;
+	padding-bottom: 19px;
+	position: relative;
+
+	h1,
+	h2 {
+		color: $purple;
+		font-size: 33px;
+		font-family: $fontHeading;
+		font-weight: 300;
+		line-height: 44px;
+		margin: 0 0 5px;
+		text-transform: uppercase;
+
+		strong {
+			font-weight: 700;
+		}
+
+		@include tabletUp {
+			font-size: 44px;
+			line-height: 55px;
+		}
+
+		@include desktopUp {
+			font-size: 55px;
+			line-height: 74px;
+		}
+	}
+
+	h3,
+	h4 {
+		color: $grey1;
+		font-family: $fontBody;
+		font-weight: 300;
+		font-size: 22px;
+		line-height: 27px;
+		margin: 0;
+
+		@include desktopUp {
+			font-size: 28px;
+			line-height: 33px;
+		}
+	}
+
+	&::after {
+		background-color: $pink;
+		content: ' ';
+		bottom: 0;
+		height: 1px;
+		left: 0;
+		margin: 0 auto;
+		position: absolute;
+		right: 0;
+		width: 154px;
+	}
+}
+
+.content {
+	color: $grey1;
+	font-family: $fontBody;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.buttons {
+	display: flex;
+	margin-top: 21px;
+
+	@include tabletUp {
+		margin-top: 41px;
+	}
+}
+
+.sectionHalfHeader {
+	h1,
+	h2 {
+		font-size: 30px;
+		line-height: 34px;
+
+		@include tabletUp {
+			font-size: 30px;
+			line-height: 34px;
+		}
+
+		@include desktopUp {
+			font-size: 38px;
+			line-height: 42px;
+		}
+	}
+}
+
+.sectionHalf {
+	.header {
+		@extend .sectionHalfHeader;
+	}
+
+	.buttons {
+		justify-content: center;
+		flex-wrap: wrap;
+
+		@include tabletUp {
+			justify-content: space-evenly;
+		}
+
+		> a {
+			align-items: center;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: center;
+			height: 54px;
+			padding: 10px;
+			margin: 0 0 17px;
+			width: 250px;
+			max-width: 100%;
+
+			@include tabletUp {
+				width: 48%;
+				max-width: 48%;
+			}
+		}
+	}
+}
+
+.sectionReviewsContent {
+	.header {
+		@extend .sectionHalfHeader;
+	}
+
+	.content {
+		text-align: center;
+	}
+}
+
+.sectionBiosContent {
+	@extend .sectionReviewsContent;
+}
+
+.sectionCtaContent {
+	@extend .sectionReviewsContent;
+
+	.header {
+		h1,
+		h2 {
+			font-size: 26px;
+			line-height: 30px;
+
+			@include tabletUp {
+				font-size: 26px;
+				line-height: 30px;
+			}
+
+			@include desktopUp {
+				font-size: 26px;
+				line-height: 30px;
+			}
+
+			@include widescreen {
+				font-size: 38px;
+				line-height: 42px;
+			}
+		}
+	}
+
+	.buttons {
+		justify-content: center;
+	}
+}
+
+.sectionSlant {
+	@extend .sectionHalf;
+}
+
+.sectionFacts {
+	@extend .sectionReviewsContent;
+
+	.header {
+		h1,
+		h2,
+		h3,
+		h4 {
+			color: $white;
+		}
+
+		&::after {
+			background-color: $white;
+		}
+	}
+}
+
+.sectionFeatured {
+	@extend .sectionCtaContent;
+}
+
+.sectionServices {
+	@extend .sectionBiosContent;
+}
+
+.sectionComponentsHeader {
+	@extend .sectionBiosContent;
+}
+
+.sectionPlanning {
+	@extend .sectionHalf;
+}
+
+.sectionForm {
+	@extend .sectionHalf;
+}
+
+.sectionFormLeft {
+	@extend .sectionForm;
+
+	.header {
+		text-align: left;
+
+		&::after {
+			margin: 0;
+			right: auto;
+		}
+	}
+}
+
+.fullWidthContent {
+	@extend .sectionHalf;
+}
+
+.venueTemplate {
+	@extend .sectionHalf;
+}
+
+.otherDjs {
+	@extend .sectionHalf;
+}
+
+.review {
+	@extend .sectionHalf;
+}
+
+.notFound {
+	.buttons {
+		justify-content: center;
+		margin-top: 20px;
+
+		> button {
+			width: auto;
+		}
+	}
+}
+
+.postHeader {
+	@extend .sectionHalf;
+}

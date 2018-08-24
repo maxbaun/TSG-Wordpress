@@ -4,17 +4,15 @@ namespace TSG;
 
 require_once(__DIR__ . '/lib/setup.php');
 require_once(__DIR__ . '/lib/options.php');
-require_once(__DIR__ . '/lib/api.php');
 require_once(__DIR__ . '/lib/mail.php');
+require_once(__DIR__ . '/lib/api/index.php');
 require_once(__DIR__ . '/lib/deploy/index.php');
-require_once(__DIR__ . '/lib/routes/index.php');
 
 new Setup();
 new Options();
 new NetlifyDeploy();
-new API();
+new Api();
 new Mail();
-new Routes();
 
 // add_filter('acf/format_value/type=image', function($value, $post_id, $field) {
 //     if (empty($value)) {
