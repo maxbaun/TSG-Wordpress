@@ -83,7 +83,7 @@ let config = {
 	plugins: [
 		new webpack.DefinePlugin({
 			'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
-			API_URL: JSON.stringify(isProd ? 'https://tsg.d3applications/wp-json' : 'http://tsg.info/wp-json')
+			API_URL: JSON.stringify(isProd ? 'https://tsg.d3applications.com/wp-json' : 'http://tsg.info/wp-json')
 		}),
 		new ExtractTextPlugin({
 			// Options similar to the same options in webpackOptions.output
