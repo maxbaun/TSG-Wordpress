@@ -26,7 +26,7 @@ class Footer extends Component {
 
 	getMenues() {
 		axios
-			.get('http://tsg.info/wp-json/tsg/v1/menu/footer')
+			.get(`${Constants.apiUrl}/tsg/v1/menu/footer`)
 			.then(res => res.data.data)
 			.then(menus => {
 				this.setState({menus});

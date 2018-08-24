@@ -9,6 +9,7 @@ import Link from './link';
 import WindowSize from './windowSize';
 import Button from './button';
 import Close from './close';
+import Constants from '../constants';
 
 // eslint-disable-next-line react/no-deprecated
 class Header extends Component {
@@ -103,7 +104,7 @@ class Header extends Component {
 
 	getMenu() {
 		axios
-			.get('http://tsg.info/wp-json/tsg/v1/menu/2')
+			.get(`${Constants.apiUrl}/tsg/v1/menu/2`)
 			.then(res => res.data)
 			.then(d => {
 				this.setState({menu: d.data});

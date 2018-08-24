@@ -50,7 +50,8 @@ class ApiPage extends Component {
 		dataSet: PropTypes.string.isRequired,
 		venues: PropTypes.array,
 		reviews: PropTypes.array,
-		djs: PropTypes.array
+		djs: PropTypes.array,
+		posts: PropTypes.array
 	};
 
 	static defaultProps = {
@@ -60,7 +61,8 @@ class ApiPage extends Component {
 		venues: [],
 		status: {},
 		reviews: [],
-		djs: []
+		djs: [],
+		posts: []
 	};
 
 	componentDidMount() {
@@ -110,12 +112,17 @@ class ApiPage extends Component {
 	}
 
 	getPage() {
+		const data = {};
+		const slug = this.getSlug();
+
+		if (slug) {
+			data.slug = slug;
+		}
+
 		this.props.actions.pageGet({
 			fetch: this.fetch,
 			route: this.props.apiRoute,
-			data: {
-				slug: this.getSlug()
-			}
+			data
 		});
 	}
 
@@ -154,7 +161,7 @@ class ApiPage extends Component {
 	}
 
 	getSlug() {
-		return this.props.match.params && this.props.match.params.slug ? this.props.match.params.slug : 'home';
+		return this.props.match.params && this.props.match.params.slug ? this.props.match.params.slug : null;
 	}
 
 	getCurrentData() {
