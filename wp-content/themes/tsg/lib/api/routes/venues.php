@@ -3,9 +3,13 @@
 namespace TSG\Api\Routes;
 
 use TSG\Api\Utils\Transform;
+use TSG\Yoast;
 
 class Venues
 {
+	public function __construct() {
+		$this->yoast = new Yoast();
+	}
 	public function getVenues($req) {
 		$perPage = !empty($req->get_param('posts_per_page')) ? $req->get_param('posts_per_page') : 24;
 		$page = !empty(intval($req->get_param('page'))) ? intval($req->get_param('page')) : 1;
@@ -106,7 +110,8 @@ class Venues
 					'width' => $image['width']
 				)
 			),
-			'location' => get_field('venueLocation', $venue->ID)
+			'location' => get_field('venueLocation', $venue->ID),
+			'yoast' => $this->yoast->getYoastData($venue)
 		);
 	}
 }

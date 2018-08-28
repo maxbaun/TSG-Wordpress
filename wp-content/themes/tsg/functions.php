@@ -6,6 +6,7 @@ require_once(__DIR__ . '/lib/setup.php');
 require_once(__DIR__ . '/lib/options.php');
 require_once(__DIR__ . '/lib/mail.php');
 require_once(__DIR__ . '/lib/gatsby.php');
+require_once(__DIR__ . '/lib/yoast.php');
 require_once(__DIR__ . '/lib/api/index.php');
 require_once(__DIR__ . '/lib/deploy/index.php');
 
@@ -15,6 +16,8 @@ new NetlifyDeploy();
 new Api();
 new Mail();
 new Gatsby();
+$yoast = new Yoast();
+$yoast->addRestPrepare();
 
 // add_filter('acf/format_value/type=image', function($value, $post_id, $field) {
 //     if (empty($value)) {
