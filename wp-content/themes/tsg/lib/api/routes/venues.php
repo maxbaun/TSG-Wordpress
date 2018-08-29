@@ -102,6 +102,7 @@ class Venues
 			'id' => $venue->ID,
 			'slug' => $venue->post_name,
 			'title' => $venue->post_title,
+			'link' => get_permalink($venue->ID),
 			'image' => array(
 				'id' => $image['id'],
 				'url' => $image['url'],
