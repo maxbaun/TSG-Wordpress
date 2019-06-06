@@ -12,6 +12,7 @@ class Gatsby
 		add_filter('acf/format_value/type=flexible_content', array($this, 'returnNull'), 100, 3);
 		add_filter('acf/format_value/type=image', array($this, 'returnNull'), 100, 3);
 		add_filter('acf/format_value/type=link', array($this, 'returnNull'), 100, 3);
+		add_filter('acf/format_value/type=gallery', array($this, 'returnNull'), 100, 3);
 
 		add_filter('acf/format_value/type=relationship', array($this, 'returnRelationship'), 100, 3);
 
