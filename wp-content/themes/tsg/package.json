@@ -17,7 +17,7 @@
 	"dependencies": {
 		"axios": "^0.18.0",
 		"baguettebox.js": "^1.10.0",
-		"bootstrap-sass": "3.3.7",
+		"bootstrap-sass": "3.4.1",
 		"flickity": "^2.1.2",
 		"font-awesome": "4.7.0",
 		"imagesloaded": "^4.1.4",
