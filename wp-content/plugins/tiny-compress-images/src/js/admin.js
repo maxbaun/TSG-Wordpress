@@ -61,6 +61,13 @@
     });
   }
 
+  function toggleChangeKey(event) {
+    jQuery('div.tiny-account-status div.update').toggle();
+    jQuery('div.tiny-account-status div.status').toggle();
+    jQuery('div.tiny-account-status div.upgrade').toggle();
+    return false;
+  }
+
   function submitKey(event) {
     event.preventDefault();
     jQuery(event.target).attr({disabled: true}).addClass('loading');
@@ -94,7 +101,7 @@
       },
       success: function(json) {
         var status = jQuery.parseJSON(json);
-        
+
         if (status.ok) {
           var target = jQuery('#tiny-account-status');
           if (target.length) {
@@ -236,14 +243,14 @@
   case 'post-php':
     eventOn('click', 'button.tiny-compress', compressImage);
     break;
-  case 'options-media-php':
   case 'settings_page_tinify':
-  case 'settings_page_media': // Enhanced Media Library plugin
     changeEnterKeyTarget('div.tiny-account-status create', '[data-tiny-action=create-key]');
     changeEnterKeyTarget('div.tiny-account-status update', '[data-tiny-action=update-key]');
 
     eventOn('click', '[data-tiny-action=create-key]', submitKey);
     eventOn('click', '[data-tiny-action=update-key]', submitKey);
+    eventOn('click', '#change-key', toggleChangeKey);
+    eventOn('click', '#cancel-change-key', toggleChangeKey);
 
     var target = jQuery('#tiny-account-status[data-state=pending]');
     if (target.length) {

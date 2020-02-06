@@ -330,3 +330,23 @@ div.tiny-bulk-optimization table.whitebox tr.no-action button.toggle-row:before 
 div.tiny-bulk-optimization table.whitebox tr.failed.is-expanded span.icon {
 	display: none;
 }
+
+div.tiny-bulk-optimization div.upgrade-account-notice {
+	padding: 22px 28px;
+	background-color: #F5F9FA;
+	text-align: center;
+}
+
+div.tiny-bulk-optimization div.upgrade-account-notice div.introduction {
+	padding-bottom: 10px;
+}
+
+div.tiny-bulk-optimization div.upgrade-account-notice p {
+	margin: 5px 0;
+}
+
+div.tiny-bulk-optimization div.upgrade-account-notice p a {
+	display: block;
+	margin-top: 10px;
+	color: #858A93;
+}

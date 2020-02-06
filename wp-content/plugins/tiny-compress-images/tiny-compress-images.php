@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Compress JPEG & PNG images
  * Description: Speed up your website. Optimize your JPEG and PNG images automatically with TinyPNG.
- * Version: 3.0.1
+ * Version: 3.2.1
  * Author: TinyPNG
  * Author URI: https://tinypng.com
  * Text Domain: tiny-compress-images
@@ -20,6 +20,7 @@ require dirname( __FILE__ ) . '/src/class-tiny-image.php';
 require dirname( __FILE__ ) . '/src/class-tiny-settings.php';
 require dirname( __FILE__ ) . '/src/class-tiny-plugin.php';
 require dirname( __FILE__ ) . '/src/class-tiny-notices.php';
+require dirname( __FILE__ ) . '/src/compatibility/wpml/class-tiny-wpml.php';
 
 if ( Tiny_PHP::client_supported() ) {
 	require dirname( __FILE__ ) . '/src/class-tiny-compress-client.php';

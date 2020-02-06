@@ -57,15 +57,17 @@ class Tiny_Image {
 			return;
 		}
 
-		$path_info = pathinfo( $this->wp_metadata['file'] );
-		$this->name = $path_info['basename'];
-
 		$upload_dir = wp_upload_dir();
 		$path_prefix = $upload_dir['basedir'] . '/';
+		$path_info = pathinfo( $this->wp_metadata['file'] );
 		if ( isset( $path_info['dirname'] ) ) {
 			$path_prefix .= $path_info['dirname'] . '/';
 		}
 
+		/* Do not use pathinfo for getting the filename.
+			 It doesn't work when the filename starts with a special character. */
+		$path_parts = explode( '/', $this->wp_metadata['file'] );
+		$this->name = end( $path_parts );
 		$filename = $path_prefix . $this->name;
 		$this->sizes[ self::ORIGINAL ] = new Tiny_Image_Size( $filename );
 
@@ -132,8 +134,12 @@ class Tiny_Image {
 			foreach ( $tiny_metadata as $size => $meta ) {
 				if ( ! isset( $this->sizes[ $size ] ) ) {
 					if ( self::is_retina( $size ) && Tiny_Settings::wr2x_active() ) {
+						$size_name = rtrim( $size, '_wr2x' );
+						if ( 'original' === $size_name ) {
+							$size_name = '0';
+						}
 						$retina_path = wr2x_get_retina(
-							$this->sizes[ rtrim( $size, '_wr2x' ) ]->filename
+							$this->sizes[ $size_name ]->filename
 						);
 						$this->sizes[ $size ] = new Tiny_Image_Size( $retina_path );
 					} else {
@@ -223,6 +229,13 @@ class Tiny_Image {
 				$this->update_tiny_post_meta();
 			}
 		}
+
+		/*
+			Other plugins can hook into this action to execute custom logic
+			after the image sizes have been compressed, ie. cache flushing.
+		*/
+		do_action( 'tiny_image_after_compression', $this->id, $success );
+
 		return array(
 			'success' => $success,
 			'failed' => $failed,
@@ -284,6 +297,11 @@ class Tiny_Image {
 			$tiny_metadata[ $size_name ] = $size->meta;
 		}
 		update_post_meta( $this->id, Tiny_Config::META_KEY, $tiny_metadata );
+		/*
+			This action is being used by WPML:
+			https://gist.github.com/srdjan-jcc/5c47685cda4da471dff5757ba3ce5ab1
+		*/
+		do_action( 'updated_tiny_postmeta', $this->id, Tiny_Config::META_KEY, $tiny_metadata );
 	}
 
 	public function get_image_sizes() {
@@ -366,7 +384,7 @@ class Tiny_Image {
 				if ( isset( $size->meta['error'] ) && isset( $size->meta['message'] ) ) {
 					if ( null === $last_timestamp || $last_timestamp < $size->meta['timestamp'] ) {
 						$last_timestamp = $size->meta['timestamp'];
-						$error_message = $size->meta['message'];
+						$error_message = mb_strimwidth( $size->meta['message'], 0 , 140, '...' );
 					}
 				}
 			}
@@ -454,6 +472,6 @@ class Tiny_Image {
 	}
 
 	public static function is_retina( $size ) {
-			return strrpos( $size, 'wr2x' ) === strlen( $size ) - strlen( 'wr2x' );
+		return strrpos( $size, 'wr2x' ) === strlen( $size ) - strlen( 'wr2x' );
 	}
 }

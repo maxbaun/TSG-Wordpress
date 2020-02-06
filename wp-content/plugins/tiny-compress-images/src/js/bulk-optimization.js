@@ -202,6 +202,11 @@
     jQuery('div#bulk-optimization-actions input#id-cancelling').addClass('visible');
   }
 
+  jQuery('.tiny-bulk-optimization .upgrade-account-notice a#hide-warning').click(function() {
+    jQuery('.tiny-bulk-optimization .upgrade-account-notice').hide();
+    jQuery('.tiny-bulk-optimization .optimize').children().show();
+  });
+
   jQuery('div#bulk-optimization-actions input').click(function() {
     if ((jQuery(this).attr('id') === 'id-start') && jQuery(this).hasClass('visible')) {
       jQuery('div#bulk-optimization-actions input#id-start').removeClass('visible');

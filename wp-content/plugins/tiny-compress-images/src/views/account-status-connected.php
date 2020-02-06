@@ -1,33 +1,37 @@
 <div class="tiny-account-status" id="tiny-account-status" data-state="complete">
 	<div class="status <?php echo $status->ok ? ( $status->pending ? 'status-pending' : 'status-success' ) : 'status-failure'; ?>">
-		<p class="status"><?php
+		<p class="status"><span><?php
 		if ( $status->ok ) {
 			if ( isset( $status->message ) ) {
 				echo esc_html( $status->message, 'tiny-compress-images' );
 			} else {
-				echo esc_html__( 'Your account is connected', 'tiny-compress-images' );
+				esc_html_e( 'Your account is connected', 'tiny-compress-images' );
 			}
 		} else {
-			echo esc_html__( 'Connection unsuccessful', 'tiny-compress-images' );
+			esc_html_e( 'Connection unsuccessful', 'tiny-compress-images' );
+		}
+		?></span>
+		<?php
+		if ( ! defined( 'TINY_API_KEY' ) ) {
+			echo '<a href="#" id="change-key">';
+			esc_html_e( 'Change API key', 'tiny-compress-images' );
+			echo '</a>';
 		}
 		?></p>
 		<p><?php
 		if ( $status->ok ) {
+			$strong = array(
+				'strong' => array(),
+			);
 			$compressions = self::get_compression_count();
-			/* It is not possible to check if a subscription is free or flexible. */
-			if ( self::limit_reached() ) {
-				$link = '<a href="https://tinypng.com/dashboard/api" target="_blank">' . esc_html__( 'TinyPNG API account', 'tiny-compress-images' ) . '</a>';
-				esc_html_e(
-					'You have reached your free limit this month.',
+			$remaining_credits = self::get_remaining_credits();
+			if ( self::is_on_free_plan() ) {
+				/* translators: %s: number of remaining credits */
+				printf( wp_kses( __(
+					'You are on a <strong>free plan</strong> with <strong>%s compressions left</strong> this month.', // WPCS: Needed for proper translation.
 					'tiny-compress-images'
-				);
-				echo '<br>';
-				/* translators: %s: link saying TinyPNG API account */
-				printf( esc_html__(
-					'If you need to compress more images you can upgrade your %s.',
-					'tiny-compress-images'
-				), $link );
-			} else {
+				), $strong ), $remaining_credits );
+			} elseif ( ! $status->pending ) {
 				/* translators: %s: number of compressions */
 				printf( esc_html__(
 					'You have made %s compressions this month.',
@@ -39,12 +43,12 @@
 				echo esc_html__( 'Error', 'tiny-compress-images' ) . ': ';
 				echo esc_html( $status->message, 'tiny-compress-images' );
 			} else {
-				esc_html__(
+				esc_html_e(
 					'API status could not be checked, enable cURL for more information',
 					'tiny-compress-images'
 				);
 			}
-		}
+		} // End if().
 		?></p>
 		<p><?php
 		if ( defined( 'TINY_API_KEY' ) ) {
@@ -53,16 +57,12 @@
 				'The API key has been configured in %s',
 				'tiny-compress-images'
 			), 'wp-config.php' );
-		} else {
-			echo '<a href="#" onclick="jQuery(\'div.tiny-account-status div.update\').toggle(); jQuery(\'div.tiny-account-status div.status\').toggle(); return false">';
-			echo esc_html__( 'Change API key', 'tiny-compress-images' );
-			echo '</a>';
 		}
 		?></p>
 	</div>
 
 	<div class="update" style="display: none">
-		<h4><?php echo esc_html__( 'Change your API key', 'tiny-compress-images' ); ?></h4>
+		<h4><?php esc_html_e( 'Change your API key', 'tiny-compress-images' ); ?></h4>
 		<p class="introduction"><?php
 			$link = sprintf( '<a href="https://tinypng.com/dashboard/api" target="_blank">%s</a>',
 				esc_html__( 'API dashboard', 'tiny-compress-images' )
@@ -73,19 +73,34 @@
 				'tiny-compress-images'
 			), $link );
 		?></p>
-
 		<input type="text" id="tinypng_api_key"
 			name="tinypng_api_key" size="35" spellcheck="false"
 			value="<?php echo esc_attr( $key ); ?>">
-
 		<button class="button button-primary" data-tiny-action="update-key"><?php
-			echo esc_html__( 'Save' );
+			esc_html_e( 'Save' );
 		?></button>
-
 		<p class="message"></p>
-
-		<p><a href="#" onclick="jQuery('div.tiny-account-status div.update').toggle(); jQuery('div.tiny-account-status div.status').toggle(); return false"><?php
-			echo esc_html__( 'Cancel' );
-		?></a></p>
+		<p>
+			<a href="#" id="cancel-change-key"><?php esc_html_e( 'Cancel' ); ?></a>
+		</p>
 	</div>
+
+	<?php if ( self::is_on_free_plan() ) { ?>
+		<div class="upgrade">
+			<div class="button-container">
+				<div class="box">
+					<?php $encoded_email = str_replace( '%20', '%2B', rawurlencode( self::get_email_address() ) ); ?>
+					<a href="https://tinypng.com/dashboard/api?type=upgrade&mail=<?php echo $encoded_email; ?>" target="_blank" class="button button-primary upgrade-account">
+						<?php esc_html_e( 'Upgrade account', 'tiny-compress-images' ); ?>
+					</a>
+				</div>
+			</div>
+			<p>
+				<?php esc_html_e(
+					'Remove all limitations? Visit your TinyPNG dashboard to upgrade your account.',
+					'tiny-compress-images'
+				); ?>
+			</p>
+		</div>
+	<?php } ?>
 </div>
