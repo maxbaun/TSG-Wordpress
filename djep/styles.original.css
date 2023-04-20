@@ -1,0 +1,3062 @@
+@import url(https://www.djep21.com/clients/includes/stylesheet_updates.css);
+/* StyleSheet - Default Style Version 24022012.0029 */
+html {
+  overflow-y: scroll;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+.djep-cursorpointer {
+  cursor: pointer;
+}
+/* Additional Body Structures */
+
+.djep-othereventcontainer {
+  text-align: right;
+}
+.djep-balanceduerow {
+  background-color: #faf07e !important;
+  color: #e7690c;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.djep-balancepaidrow {
+  background-color: #e2ffb7 !important;
+  color: #488215;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.djep-totalfeerow {
+  background-color: #d7f4ff !important;
+  color: #044b9b;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.djep-totaldepositrow {
+  background-color: #ffcacb !important;
+  color: #790003;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.djep-totalfeerow span {
+  background-color: #d7f4ff !important;
+  color: #044b9b;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.djep-esigned {
+  background-image: url(https://djep21.com/clients/images/padlock_closed.png);
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+  text-indent: 25px;
+}
+
+#edit_special_song_type_helper_div {
+  max-width: 275px;
+}
+#special_song_type_id {
+  max-width: 100%;
+}
+
+#welcomeHTML {
+  display: hidden;
+}
+
+.djep-planningformsbox table tbody tr,
+.djep-timelinebox table tbody tr,
+.djep-ourcontactinfobox table tbody tr {
+  vertical-align: middle;
+}
+
+tr {
+  vertical-align: middle;
+}
+
+select.djep-printbox {
+  max-width: 280px;
+}
+
+#upcomingeventid {
+  display: none;
+}
+
+.djep-viewplanningformdiv {
+  width: 98%;
+  height: 400px;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+#djep-content {
+  max-width: 800px !important;
+  width: auto !important;
+}
+/* Main Body Structures */
+body.djep-body {
+  padding: 0;
+  width: 100%;
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  color: #102d3c;
+  background-repeat: repeat-x;
+  background-position: top left;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin: 0;
+}
+#djep-page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: auto !important;
+}
+#djep-guestrequestpage {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: auto !important;
+}
+
+body.djep-body[style*="background-color:"] {
+  background-color: #ffffff;
+}
+
+#djep-header {
+  text-align: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#djep-content {
+  border: 1px solid #333;
+  padding: 0px 10px;
+  text-align: left;
+  margin: 0 auto;
+
+  width: 800px; /* VERY IMPORTANT - DNE */
+  border-radius: 5px;
+  box-shadow: #999 0px 2px 8px;
+  background: #ffffff; /* VERY IMPORTANT - DNE */
+  overflow: hidden;
+}
+#djep-guestrequestcontent {
+  border: 1px solid #333;
+  padding: 0px 10px;
+  text-align: left;
+  margin: 0 auto;
+
+  width: 800px; /* VERY IMPORTANT - DNE */
+  border-radius: 5px;
+  box-shadow: #999 0px 2px 8px;
+  background: #ffffff; /* VERY IMPORTANT - DNE */
+  overflow: hidden;
+}
+
+#djep-countdownclock {
+}
+
+/* Navigation Bar */
+#djep-navbar {
+  margin: 0 auto;
+  width: 800px;
+}
+ul#djep-navigation {
+  height: 36px;
+  margin: 0 auto;
+  padding: 20px 10px 0 10px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+}
+
+ul#djep-navigation li {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  float: left;
+  width: 104px;
+  margin: 0 5px 0 0;
+  background-color: #2b477d;
+  border: solid 1px #415f9d;
+  position: relative;
+  z-index: 1;
+  list-style: none;
+}
+
+ul#djep-navigation li.selected {
+  z-index: 3;
+}
+
+ul#djep-navigation li.shadow {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  border: none;
+  background: none;
+  z-index: 2;
+  -webkit-box-shadow: #111 0 -2px 6px;
+  -moz-box-shadow: #111 0 -2px 6px;
+  box-shadow: #111 0 -2px 6px;
+}
+
+ul#djep-navigation li a:link,
+ul#djep-navigation li a:visited {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  display: block;
+  text-align: center;
+  width: 104px;
+  height: 40px;
+  line-height: 38px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  outline: none;
+  float: left;
+  background: #2b477d;
+  -webkit-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+}
+
+ul#djep-navigation li a:hover {
+  background-color: #5a87dd;
+}
+
+ul#djep-navigation li.selected a:link,
+ul#djep-navigation li.selected a:visited {
+  color: #2b477d;
+  border: solid 1px #fff;
+  -webkit-transition: background-color 0.2s linear;
+  background: -moz-linear-gradient(top center, #d1d1d1, #f2f2f2 80%) repeat
+    scroll 0 0 #f2f2f2;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.2, #f2f2f2),
+    color-stop(0.8, #d1d1d1)
+  );
+  background-color: #f2f2f2;
+}
+
+/* Main Typography Styling */
+h1.djep-h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  color: #096f95;
+  margin: 21px 0; /* IMPORTANT - hack to fix IE7 */
+}
+h2.djep-h2 {
+  font-size: 24px;
+  color: #336699;
+  margin: 21px 0; /* IMPORTANT - hack to fix IE7 */
+}
+h3.djep-h3 {
+  font-size: 18px;
+  color: #666;
+}
+p.djep-p-standard {
+  font-size: 16px;
+}
+p {
+}
+
+/* Section Title Headings */
+
+.djep-titlebar {
+  padding: 11px 0px 11px 17px !important;
+}
+.djep-titlebar {
+  display: block;
+  width: 96%;
+  background-color: #f8f8f8;
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 1px 0;
+  font-weight: bold;
+  margin: 20px auto;
+  padding: 11px 17px;
+  font-size: 14px;
+  color: #036;
+}
+
+.djep-titlebarsmall {
+  display: block;
+  width: 90%;
+  clear: both;
+  background-color: #f8f8f8;
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 1px 0;
+  font-weight: bold;
+  margin: 20px auto;
+  padding: 11px 17px;
+  font-size: 14px;
+  color: #036;
+}
+
+.djep-titlebarsmaller {
+  display: block;
+  width: 80%;
+  clear: both;
+  background-color: #f8f8f8;
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 1px 0;
+  font-weight: bold;
+  margin: 20px auto;
+  padding: 11px 17px;
+  font-size: 14px;
+  color: #036;
+}
+
+.djep-titlebarsmallalert {
+  display: block;
+  width: 90%;
+  clear: both;
+  background-color: #e99f9f;
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 1px 0;
+  font-weight: bold;
+  margin: 20px auto;
+  padding: 11px 17px;
+  font-size: 14px;
+  color: #036;
+}
+
+.djep-titlebarconfirm {
+  display: block;
+  width: 90%;
+  clear: both;
+  background-color: #abed97;
+  background-image: -moz-linear-gradient(top, #abed97, #d6fdca);
+  background-image: -webkit-gradient(
+    linear,
+    center top,
+    center bottom,
+    from(#abed97),
+    to(#d6fdca)
+  );
+  background-image: -o-linear-gradient(top, #abed97, #d6fdca);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#abed97', endColorstr='#d6fdca');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#abed97', endColorstr='#d6fdca')";
+  background-image: linear-gradient(top, #abed97, #d6fdca);
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 1px 0;
+  font-weight: bold;
+  margin: 20px auto 10px;
+  padding: 11px 2px;
+  font-size: 14px;
+  color: #036;
+}
+
+.djep-titlebarmusicconfirm {
+  display: block;
+  width: 90%;
+  clear: both;
+  background-color: #abed97;
+  background-image: -moz-linear-gradient(top, #abed97, #d6fdca);
+  background-image: -webkit-gradient(
+    linear,
+    center top,
+    center bottom,
+    from(#abed97),
+    to(#d6fdca)
+  );
+  background-image: -o-linear-gradient(top, #abed97, #d6fdca);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#abed97', endColorstr='#d6fdca');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#abed97', endColorstr='#d6fdca')";
+  background-image: linear-gradient(top, #abed97, #d6fdca);
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 1px 0;
+  font-weight: bold;
+  margin: 20px auto -10px;
+  padding: 11px 2px;
+  font-size: 14px;
+  color: #036;
+}
+
+.djep-songrequesttotals {
+  display: block;
+  width: 95%;
+  clear: both;
+  background-color: #fffce2;
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: normal;
+  margin: 20px auto;
+  padding: 3px;
+  font-size: 12px;
+  color: #036;
+}
+
+.djep-titlebarnotices {
+  display: block;
+  width: 90%;
+  clear: both;
+  background-color: #fffce2;
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 2px;
+  font-weight: bold;
+  margin: 20px auto;
+  padding: 11px 17px;
+  font-size: 14px;
+  color: #036;
+}
+
+.djep-titlebarlockout {
+  display: block;
+  width: 80%;
+  clear: both;
+  background-color: #e22328;
+  border-color: #820003;
+  border-style: solid;
+  border-width: 2px;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 11px 17px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Clearing and Spacing Divs */
+.djep-cleared {
+  display: block;
+  clear: both;
+  float: none;
+  margin: 5px 0 0;
+  padding: 5px 0 0;
+  border: none;
+  font-size: 0;
+  height: 0;
+  overflow: hidden;
+}
+.djep-faqcleared {
+  display: block;
+  clear: both;
+  float: none;
+  margin: 22px 0 0;
+  padding: 22px 0 0;
+  border: none;
+  font-size: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* System Input Styles */
+#djep-form-div {
+  background-color: #f5f5f5;
+  padding: 15px;
+}
+
+#djep-wrapper {
+  margin: 10px auto;
+  width: 500px;
+}
+
+input.djep-input,
+select.djep-select,
+textarea.djep-textarea {
+  vertical-align: middle;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+input.djep-widgetaction {
+  padding: 8px;
+  border: solid 1px #aaa;
+  font: normal 12px Verdana, Tahoma, sans-serif;
+  background-color: #cccccc;
+  width: 80%;
+}
+
+textarea.djep-textarea {
+  padding: 8px;
+  border: solid 1px #e5e5e5;
+  font: normal 12px Verdana, Tahoma, sans-serif;
+  width: 90%;
+}
+
+.djep-textarea_notes {
+  width: 95%;
+  max-width: 400px;
+  height: 195px;
+  line-height: 150%;
+}
+
+.djep-textarea_todo {
+  width: 95%;
+  max-width: 400px;
+  height: 70px;
+  line-height: 150%;
+}
+
+.djep-form label {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #666;
+  padding: 9px 15px;
+}
+
+.djep-submit input {
+  width: 50px;
+  padding: 9px 15px;
+  background: #617798;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* FAQ Accordian Styling */
+/* Feature will be released soon - DO NOT EDIT BELOW! If you use a custom stylesheet, ensure this section is added also */
+#djep-accordianwrapper {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto !important;
+}
+.djep-accordianbuttonimage {
+  float: left;
+  padding-right: 15px;
+  padding-left: 5px;
+}
+.djep-accordianbuttonimageright {
+  float: right;
+  padding-right: 15px;
+  padding-left: 5px;
+}
+.djep-accordionContent {
+  width: 95%;
+  float: left;
+  background: transparent !important;
+  display: none;
+  padding: 8px 6px 25px;
+  margin-top: -8px;
+}
+.djep-accordionButton {
+  width: 95%;
+  float: left;
+  margin: 8px 0;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  border: thin solid;
+  border-width: 1px;
+  border-color: #ccc;
+  border-radius: 6px;
+  background-image: -moz-linear-gradient(top, #d1cfcd, #ffffff);
+  background-image: -webkit-gradient(
+    linear,
+    center top,
+    center bottom,
+    from(#d1cfcd),
+    to(#ffffff)
+  );
+  background-image: -o-linear-gradient(top, #d1cfcd, #ffffff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1cfcd', endColorstr='#ffffff');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1cfcd', endColorstr='#ffffff')";
+  background-image: linear-gradient(top, #d1cfcd, #ffffff);
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  cursor: pointer;
+}
+
+/* Requests and Sepcial Songs Playlist Panels */
+
+.djep-playlistboxspotifytitle {
+  background: rgb(212, 255, 163); /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(212, 255, 163, 1) 0%,
+    rgba(173, 255, 163, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(212, 255, 163, 1) 0%,
+    rgba(173, 255, 163, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(212, 255, 163, 1) 0%,
+    rgba(173, 255, 163, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4ffa3', endColorstr='#adffa3',GradientType=0 ); /* IE6-9 */
+  height: 35px;
+  margin-top: 8px;
+  font-weight: 400;
+  border: 1px solid #b5b5b5 !important;
+}
+.djep-playlistboxmustplaytitle {
+  background: #b4e391;
+  background: -moz-linear-gradient(top, #b4e391 0%, #96f21f 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #b4e391),
+    color-stop(100%, #96f21f)
+  );
+  background: -webkit-linear-gradient(top, #b4e391 0%, #96f21f 100%);
+  background: -o-linear-gradient(top, #b4e391 0%, #96f21f 100%);
+  background: -ms-linear-gradient(top, #b4e391 0%, #96f21f 100%);
+  background: linear-gradient(top, #b4e391 0%, #96f21f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#96f21f',GradientType=0 );
+  height: 35px;
+  margin-top: 8px;
+  font-weight: 400;
+  border: 1px solid #b5b5b5 !important;
+}
+
+.djep-playlistboxplayifposstitle {
+  background: #fff8c1;
+  background: -moz-linear-gradient(top, #fff8c1 0%, #f1da36 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #fff8c1),
+    color-stop(100%, #f1da36)
+  );
+  background: -webkit-linear-gradient(top, #fff8c1 0%, #f1da36 100%);
+  background: -o-linear-gradient(top, #fff8c1 0%, #f1da36 100%);
+  background: -ms-linear-gradient(top, #fff8c1 0%, #f1da36 100%);
+  background: linear-gradient(top, #fff8c1 0%, #f1da36 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff8c1', endColorstr='#f1da36',GradientType=0 );
+  height: 35px;
+  margin-top: 8px;
+  font-weight: 400;
+  border: 1px solid #b5b5b5 !important;
+}
+.djep-playlistboxdedicationstitle {
+  background: #adcdfc;
+  background: -moz-linear-gradient(top, #adcdfc 1%, #81b3f9 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(1%, #adcdfc),
+    color-stop(100%, #81b3f9)
+  );
+  background: -webkit-linear-gradient(top, #adcdfc 1%, #81b3f9 100%);
+  background: -o-linear-gradient(top, #adcdfc 1%, #81b3f9 100%);
+  background: -ms-linear-gradient(top, #adcdfc 1%, #81b3f9 100%);
+  background: linear-gradient(top, #adcdfc 1%, #81b3f9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#adcdfc', endColorstr='#81b3f9',GradientType=0 );
+  height: 35px;
+  margin-top: 8px;
+  font-weight: 400;
+  border: 1px solid #b5b5b5 !important;
+}
+.djep-playlistboxonlyrequesttitle {
+  background: #ffe8e8;
+  background: -moz-linear-gradient(top, #ffe8e8 0%, #a5829b 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #ffe8e8),
+    color-stop(100%, #a5829b)
+  );
+  background: -webkit-linear-gradient(top, #ffe8e8 0%, #a5829b 100%);
+  background: -o-linear-gradient(top, #ffe8e8 0%, #a5829b 100%);
+  background: -ms-linear-gradient(top, #ffe8e8 0%, #a5829b 100%);
+  background: linear-gradient(top, #ffe8e8 0%, #a5829b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe8e8', endColorstr='#a5829b',GradientType=0 );
+  height: 35px;
+  margin-top: 8px;
+  font-weight: 400;
+  border: 1px solid #b5b5b5 !important;
+}
+.djep-playlistboxdonotplaytitle {
+  background: #f7a99b;
+  background: -moz-linear-gradient(top, #f7a99b 0%, #e5584b 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #f7a99b),
+    color-stop(100%, #e5584b)
+  );
+  background: -webkit-linear-gradient(top, #f7a99b 0%, #e5584b 100%);
+  background: -o-linear-gradient(top, #f7a99b 0%, #e5584b 100%);
+  background: -ms-linear-gradient(top, #f7a99b 0%, #e5584b 100%);
+  background: linear-gradient(top, #f7a99b 0%, #e5584b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7a99b', endColorstr='#e5584b',GradientType=0 );
+  height: 35px;
+  padding-top: 4px;
+  font-weight: 400;
+  border: 1px solid #b5b5b5 !important;
+}
+
+.djep-playlistbox {
+  background-color: #f6f6f6;
+  text-align: left;
+}
+.djep-playlistboxspotify {
+  background-color: #f1ffea;
+  text-align: left;
+}
+.djep-playlistboxmustplay {
+  background-color: #f1ffea;
+  text-align: left;
+}
+.djep-playlistboxdonotplay {
+  background-color: #fff1f1;
+  text-align: left;
+}
+.djep-playlistboxplayifposs {
+  background-color: #fffee8;
+  text-align: left;
+}
+.djep-playlistboxdedications {
+  background-color: #dde8ff;
+  text-align: left;
+}
+.djep-playlistboxonlyrequest {
+  background-color: #e9ceff;
+  text-align: left;
+}
+.djep-playlistboxmustplay,
+.djep-playlistboxdonotplay,
+.djep-playlistboxplayifposs,
+.djep-playlistboxdedications,
+.djep-playlistboxonlyrequest,
+.djep-playlistbox {
+  border-radius: 4px;
+}
+
+.djep-playlistboxcustomtype1 {
+  background-color: #ecfbff;
+  text-align: left;
+}
+.djep-playlistboxcustomtype2 {
+  background-color: #ecfff0;
+  text-align: left;
+}
+.djep-playlistboxcustomtype3 {
+  background-color: #fff3ff;
+  text-align: left;
+}
+.djep-playlistboxcustomtype4 {
+  background-color: #fff1e3;
+  text-align: left;
+}
+.djep-playlistboxcustomtype5 {
+  background-color: #ffffd3;
+  text-align: left;
+}
+.djep-playlistboxcustomtype3title {
+  background: #ffc9dd;
+  background: -moz-linear-gradient(top, #ffc9dd 0%, #ff8fb9 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #ffc9dd),
+    color-stop(100%, #ff8fb9)
+  );
+  background: -webkit-linear-gradient(top, #ffc9dd 0%, #ff8fb9 100%);
+  background: -o-linear-gradient(top, #ffc9dd 0%, #ff8fb9 100%);
+  background: -ms-linear-gradient(top, #ffc9dd 0%, #ff8fb9 100%);
+  background: linear-gradient(top, #ffc9dd 0%, #ff8fb9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc9dd', endColorstr='#ff8fb9',GradientType=0 );
+  height: 35px;
+  margin-top: 8px;
+  font-weight: 400;
+  border: 1px solid #b5b5b5 !important;
+}
+.djep-playlistboxcustomtype2title {
+  background: #d0e4c1;
+  background: -moz-linear-gradient(top, #d0e4c1 0%, #c1ef86 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #d0e4c1),
+    color-stop(100%, #c1ef86)
+  );
+  background: -webkit-linear-gradient(top, #d0e4c1 0%, #c1ef86 100%);
+  background: -o-linear-gradient(top, #d0e4c1 0%, #c1ef86 100%);
+  background: -ms-linear-gradient(top, #d0e4c1 0%, #c1ef86 100%);
+  background: linear-gradient(top, #d0e4c1 0%, #96f21f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4c1', endColorstr='#c1ef86',GradientType=0 );
+  height: 35px;
+  margin-top: 8px;
+  font-weight: 400;
+  border: 1px solid #b5b5b5 !important;
+}
+.djep-playlistboxcustomtype1title {
+  background: #e2f3ff;
+  background: -moz-linear-gradient(top, #e2f3ff 0%, #a7c2ff 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #e2f3ff),
+    color-stop(100%, #a7c2ff)
+  );
+  background: -webkit-linear-gradient(top, #e2f3ff 0%, #a7c2ff 100%);
+  background: -o-linear-gradient(top, #e2f3ff 0%, #a7c2ff 100%);
+  background: -ms-linear-gradient(top, #e2f3ff 0%, #a7c2ff 100%);
+  background: linear-gradient(top, #e2f3ff 0%, #a7c2ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f3ff', endColorstr='#a7c2ff',GradientType=0 );
+  height: 35px;
+  margin-top: 8px;
+  font-weight: 400;
+  border: 1px solid #b5b5b5 !important;
+}
+.djep-playlistboxcustomtype4title {
+  background: #ffceb6;
+  background: -moz-linear-gradient(top, #ffceb6 0%, #ff9b6a 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #ffceb6),
+    color-stop(100%, #ff9b6a)
+  );
+  background: -webkit-linear-gradient(top, #ffceb6 0%, #ff9b6a 100%);
+  background: -o-linear-gradient(top, #ffceb6 0%, #ff9b6a 100%);
+  background: -ms-linear-gradient(top, #ffceb6 0%, #ff9b6a 100%);
+  background: linear-gradient(top, #ffceb6 0%, #ff9b6a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffceb6', endColorstr='#ff9b6a',GradientType=0 );
+  height: 35px;
+  margin-top: 8px;
+  font-weight: 400;
+  border: 1px solid #b5b5b5 !important;
+}
+.djep-playlistboxcustomtype5title {
+  background: #fdfd9b;
+  background: -moz-linear-gradient(top, #ffebcd 0%, #fddcaa 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #ffebcd),
+    color-stop(100%, #fddcaa)
+  );
+  background: -webkit-linear-gradient(top, #ffebcd 0%, #fddcaa 100%);
+  background: -o-linear-gradient(top, #ffebcd 0%, #fddcaa 100%);
+  background: -ms-linear-gradient(top, #ffebcd 0%, #fddcaa 100%);
+  background: linear-gradient(top, #ffebcd 0%, #fddcaa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFEBCD', endColorstr='#fddcaa',GradientType=0 );
+  height: 35px;
+  margin-top: 8px;
+  font-weight: 400;
+  border: 1px solid #b5b5b5 !important;
+}
+
+.djep-specialtitle {
+  position: relative;
+  top: 9px;
+  left: 25px;
+}
+.djep-specialsongtitle {
+  background-color: #e9e9e9;
+  height: 25px;
+  border: 1px solid white;
+}
+.djep-specialsongcontent {
+  background-color: #fefefe;
+}
+.djep-specialsongbutton {
+  background-color: #efefef;
+  border: 1px solid #7a7a7a;
+  color: #5c5a5c;
+  font-family: arial;
+  font-size: 10px !important;
+  font-weight: normal;
+  padding: 4px 2px;
+  text-decoration: none;
+  border-radius: 4px;
+  width: 90px;
+  cursor: pointer;
+}
+.djep-specialsongbutton:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #f5f5f5),
+    color-stop(1, #ffffff)
+  );
+  background: -moz-linear-gradient(center top, #f5f5f5 5%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#ffffff');
+  background-color: #f5f5f5;
+}
+.djep-specialsongbutton:active {
+  position: relative;
+  top: 1px;
+}
+
+.djep-special_song_header {
+  background: #ddd;
+  height: 35px;
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  border: 1px solid #b5b5b5 !important;
+  text-decoration: none;
+  color: #000;
+}
+.djep-special_song_content_div {
+  background: white;
+  padding: 0px !important;
+}
+
+.djep-playlisttitle {
+  position: relative;
+  top: 9px;
+  left: 25px;
+}
+.djep-playlistlimits {
+  padding-right: 5px;
+  padding-top: 3px;
+  font-size: 11px;
+  float: right;
+  font-weight: 200;
+}
+.djep-requestonlytitle {
+  font-size: 12px;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #666;
+  text-align: center;
+  width: 280px;
+  margin: 2px auto 0;
+  border: 1px solid #aaa;
+  background: #ccc url(../images/ui-bg_highlight-soft_75_cccccc_1x100.png)
+    center repeat-x;
+  border-radius: 4px;
+  height: 34px;
+}
+.djep-requestonlytitle > p {
+  margin-top: 10px;
+}
+.djep-songideasdropdown,
+.djep-songgenresdropdown {
+  background-color: #ededed;
+  border: 1px solid black;
+  display: inline-block;
+  color: #999 !important;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: 900;
+  height: 35px;
+  text-decoration: none;
+  padding: 4px 5px;
+  width: 90%;
+  font-size: 18px !important;
+  border-radius: 5px;
+}
+.djep-requestlimitbox {
+  margin: 10px auto;
+  color: black;
+  line-height: 100%;
+  vertical-align: center;
+  width: 90%;
+}
+.djep-requestlimittitle {
+  display: block;
+  width: 90%;
+  background-color: #fefefe;
+  border-color: #d6d6d6;
+  border-style: solid;
+  border-width: 1px 0;
+  font-weight: bold;
+  margin: 2px auto;
+  padding: 11px 0px 11px 17px;
+  font-size: 14px;
+  color: #036;
+}
+
+.djep-songideaerror {
+  border: 1px solid gold;
+  background: lightYellow;
+  padding: 15px 0px 15px 0px;
+  margin: 10px auto;
+  border-radius: 3px;
+  color: black;
+  line-height: 100%;
+  vertical-align: center;
+}
+
+/* NavBar Switch between Request and Special Songs */
+.djep-music_selections_navigation {
+  width: 280px;
+  margin: 2px auto 0;
+  border: 1px solid #aaa;
+  background: #ccc url(../images/ui-bg_highlight-soft_75_cccccc_1x100.png)
+    center repeat-x;
+  border-radius: 4px;
+  height: 34px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.djep-music_selections_navigation ul {
+  list-style: none;
+  margin-left: -25px;
+  float: left;
+}
+.djep-music_selections_navigation li {
+  width: 120px;
+  height: 20px;
+  float: left;
+  margin: -8px 10px 0 0;
+}
+.djep-music_selections_navigation li a {
+  border-radius: 4px;
+  text-align: center;
+  padding-top: 5px;
+  width: 115px;
+  height: 20px;
+  float: left;
+}
+.djep-playlistbuttonoverrides a {
+  padding: 5px 8px 0px;
+}
+.djep-playlistbuttonoverrides a,
+.djep-playlistbuttonoverrides {
+  width: auto !important;
+}
+
+.djep-music_selections_navigation li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.djep-music_selections_navigation-li a /*inactive state */ {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #ededed),
+    color-stop(1, #dfdfdf)
+  );
+  background: -moz-linear-gradient(center top, #ededed 5%, #dfdfdf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+  background-color: #ededed;
+  border: solid 1px #f9f9f9;
+  color: #777777;
+}
+.djep-music_selections_navigation-li a:hover /*inactive state */ {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #dfdfdf),
+    color-stop(1, #ededed)
+  );
+  background: -moz-linear-gradient(center top, #dfdfdf 5%, #ededed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+  background-color: #dfdfdf;
+  color: #777777;
+}
+.djep-music_selections_navigation-active a /*active state */ {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #ffffff),
+    color-stop(1, #f6f6f6)
+  );
+  background: -moz-linear-gradient(center top, #ffffff 5%, #f6f6f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6');
+  background-color: #ffffff;
+  color: #000;
+  font-weight: 400;
+  border: 1px solid #dcdcdc;
+}
+.djep-music_selections_navigation-active a:hover /*active state */ {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #f6f6f6),
+    color-stop(1, #ffffff)
+  );
+  background: -moz-linear-gradient(center top, #f6f6f6 5%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff');
+  background-color: #f6f6f6;
+}
+
+.djep-specialdescription {
+  border: 0px 0px 1px 0px solid gold;
+  background: lightYellow;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-bottom: 7px;
+  padding-left: 2px;
+  margin: 0px 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  color: black;
+  text-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+}
+.djep-specialcloseicon {
+  font-size: 11px;
+  width: 100%;
+  text-align: right;
+}
+.djep-specialcloseicon a {
+  color: #c00;
+  text-align: right;
+  margin-right: 5px;
+}
+.djep-specialdescriptiontext {
+  padding-left: 4px;
+  padding-right: 20px;
+  margin-top: -10px;
+}
+
+/* Music Database */
+.djep-databaseheader {
+  background-color: #ffffff;
+  padding: 4px;
+  text-align: left;
+  text-indent: 20px;
+  color: #333333;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.djep-databasetableheader {
+  background-color: #ddd;
+  color: #333333;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.djep-musicresultstable {
+  font-size: 11px !important;
+}
+.djep-musicsearchform {
+  border-width: medium;
+  border-radius: 5px;
+  width: 350px;
+  height: 23px;
+  font-size: 18px !important;
+  font-weight: 700;
+  color: #999;
+  text-indent: 10px;
+  border-color: #666;
+}
+
+.djep-databasebox {
+  border: 1px solid #666;
+  background-color: #f1f1f1;
+  padding: 2px;
+  text-align: left;
+  color: #333333;
+  font-size: 11px;
+}
+
+.djep-paginatebutton {
+  border: 1px solid #aaaaaa;
+  cursor: pointer;
+  margin: 0 2px;
+  padding: 2px 5px;
+  background-color: #dddddd;
+}
+.djep-paginatebutton:hover {
+  background-color: #bbbbbb;
+}
+
+.djep-activepaginatebutton {
+  border: 1px solid #aaaaaa;
+  cursor: pointer;
+  margin: 0 2px;
+  padding: 2px 5px;
+  font-weight: bold;
+  background-color: #99b3ff;
+}
+
+.djep-dragtoplaylist {
+  background-image: url(../images/dragimage.png);
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 173px;
+}
+
+.djep-playlistitemsaved {
+  background-image: url(../images/savedmusic.png);
+  position: absolute;
+  left: 45px;
+  top: 20px;
+  height: 70px;
+  width: 173px;
+}
+.djep-specialsongitemsaved {
+  background-image: url(../images/specialsavedmusic.png);
+  position: absolute;
+  left: 45px;
+  top: 20px;
+  height: 70px;
+  width: 173px;
+  z-index: 1;
+}
+
+tr[id*="draggable_"] {
+  cursor: url(../images/openhand.cur), default !important; /* Forces a custom hand icon to indicate drag and drop*/
+}
+tr[id*="song_row_for_songid"] > td {
+  padding: 0 3px !important;
+}
+
+/* General Table Styling Elements */
+.djep-odd {
+  background-color: #eaeaea;
+}
+.djep-even {
+  background-color: #ffffff;
+}
+.djep-table-headers {
+  background-color: #e4e4e4;
+}
+.djep-sectiontitle {
+  background-color: #e9e9e9;
+  height: 25px;
+}
+.djep-tablehover {
+  background-color: #bbd7e8;
+}
+.djep-tablehover1 {
+  background-color: #f1f1f1;
+}
+.djep-tablehover2 {
+  background-color: transparent;
+}
+.djep-service-desc-div {
+  border: thin #ccc solid;
+}
+.djep-service-desc-topcell {
+  border-left: thin #ccc solid;
+  border-right: thin #ccc solid;
+  border-top: thin #ccc solid;
+}
+.djep-service-desc-bottomcell {
+  border-left: thin #ccc solid;
+  border-right: thin #ccc solid;
+  border-bottom: thin #ccc solid;
+}
+
+/* Misc Styling Elements */
+.djep-servicedetailsfieldset {
+  border: #cccccc thin solid;
+  margin-bottom: 10px;
+}
+.djep-servicedetailslegend {
+  font-size: 14px;
+}
+#djep-contactbox {
+  font: 12px Verdana, Geneva, sans-serif;
+  background: #f1f1f1;
+  padding: 15px 10px;
+  width: 95%;
+}
+.djep-form-sections {
+  background-color: #e4e4e4;
+}
+.djep-pointerforce {
+  cursor: pointer;
+}
+.djep-opaque {
+  opacity: 1.4;
+  filter: alpha(opacity=100);
+}
+.djep-opaque:hover {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+.djep-opaque:active {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.djep-changebutton {
+  float: right;
+  padding: 0 30px;
+}
+.djep-printbox {
+  height: 24px;
+  font-size: 14px;
+}
+#djep-printhelper {
+  padding-right: 10px;
+  width: 100%;
+  height: 40px;
+  text-align: right;
+}
+#djep-printplanningformicon {
+  padding: 0 5px;
+}
+#print_helper {
+  float: right;
+  padding: 0;
+}
+djep-SubmitHide {
+  display: none;
+}
+.djep-playlistboxtext {
+  font-size: 11px;
+  text-align: left;
+}
+.djep-playlist_highlight_focus_in {
+  border: 1px solid #585858;
+  background-color: #f7fe2e;
+}
+.djep-playlist_highlighter_focus_out {
+  border: none;
+  background-color: #fff;
+}
+.djep-musiccounterspan {
+  float: right;
+  margin-top: -8px;
+  font-size: 12px;
+}
+.djep-playlistcounterspan {
+  float: right;
+  padding-right: 3px;
+  font-size: 11px;
+  text-align: right;
+  font-weight: 100;
+}
+.djep-guestrequestlink {
+  color: #f00;
+}
+.djep-guestrequestpassword {
+  color: #ff0000;
+}
+
+/* Imageless Calendar Icon CSS - We advise not editing any of this */
+.calendar {
+  width: 74px;
+  font-size: 1.4em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#405b72),
+    to(#e6e6e6),
+    color-stop(0.08, #f9f9f9)
+  );
+  background: -moz-linear-gradient(top, #f9f9f9, #e6e6e6);
+  box-shadow: 0 0 5px #05587e;
+  -moz-box-shadow: 0 0 5px #05587e;
+  -webkit-box-shadow: 0 0 5px #05587e;
+}
+.calendar > span {
+  display: block;
+}
+.calendar > .month {
+  text-align: center;
+  padding: 2px 5px 2px 0;
+  font-size: 0.8em;
+  background: #6086a6;
+  color: #fff;
+  font-weight: bold;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  text-shadow: 0 1px #000;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#acc0d1),
+    to(#6086a6)
+  );
+  background: -moz-linear-gradient(top, #acc0d1, #6086a6);
+}
+.calendar > .day {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.9em;
+  margin-bottom: -6px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+}
+.calendar > .year {
+  color: #999;
+  font-size: 8px;
+}
+
+/* CSS buttons */
+.djep-planeventbutton {
+  -moz-box-shadow: inset 0px 1px 0px 0px #a4e271;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #a4e271;
+  box-shadow: inset 0px 1px 0px 0px #a4e271;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #89c403),
+    color-stop(1, #77a809)
+  );
+  background: -moz-linear-gradient(center top, #89c403 5%, #77a809 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#89c403', endColorstr='#77a809');
+  background-color: #89c403;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #74b807;
+  display: inline-block;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 23px;
+  margin-top: -5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.djep-planeventbutton:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #77a809),
+    color-stop(1, #89c403)
+  );
+  background: -moz-linear-gradient(center top, #77a809 5%, #89c403 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#77a809', endColorstr='#89c403');
+  background-color: #77a809;
+}
+
+.djep-planeventbutton:active {
+  position: relative;
+  top: 1px;
+}
+
+.djep-eventdetailsbutton {
+  -moz-box-shadow: inset 0px 1px 0px 0px #dcecfb;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #dcecfb;
+  box-shadow: inset 0px 1px 0px 0px #dcecfb;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #c6d6e6),
+    color-stop(1, #6086a6)
+  );
+  background: -moz-linear-gradient(center top, #c6d6e6 5%, #6086a6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6d6e6', endColorstr='#6086a6');
+  background-color: #c6d6e6;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #9e9e9e;
+  display: inline-block;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 25px;
+  margin-top: -5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.djep-eventdetailsbutton:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #6086a6),
+    color-stop(1, #c6d6e6)
+  );
+  background: -moz-linear-gradient(center top, #6086a6 5%, #c6d6e6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6086a6', endColorstr='#c6d6e6');
+  background-color: #6086a6;
+}
+
+.djep-eventdetailsbutton:active {
+  position: relative;
+  top: 1px;
+}
+
+.djep-paymentbutton {
+  -moz-box-shadow: inset 0px 1px 0px 0px #e6cafc;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #e6cafc;
+  box-shadow: inset 0px 1px 0px 0px #e6cafc;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #c579ff),
+    color-stop(1, #a341ee)
+  );
+  background: -moz-linear-gradient(center top, #c579ff 5%, #a341ee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c579ff', endColorstr='#a341ee');
+  background-color: #c579ff;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #a946f5;
+  display: inline-block;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 23px;
+  text-decoration: none;
+  margin-top: 5px;
+  text-align: center;
+  text-shadow: 1px 1px 0px #8628ce;
+}
+
+.djep-paymentbutton:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #a341ee),
+    color-stop(1, #c579ff)
+  );
+  background: -moz-linear-gradient(center top, #a341ee 5%, #c579ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a341ee', endColorstr='#c579ff');
+  background-color: #a341ee;
+}
+
+.djep-paymentbutton :active {
+  position: relative;
+  top: 1px;
+}
+
+.djep-readviewbutton {
+  -moz-box-shadow: inset 0px 1px 0px 0px #dcecfb;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #dcecfb;
+  box-shadow: inset 0px 1px 0px 0px #dcecfb;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #c6d6e6),
+    color-stop(1, #6086a6)
+  );
+  background: -moz-linear-gradient(center top, #c6d6e6 5%, #6086a6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6d6e6', endColorstr='#6086a6');
+  background-color: #c6d6e6;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #9e9e9e;
+  display: inline-block;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 25px;
+  margin-top: -5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.djep-readviewbutton:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #6086a6),
+    color-stop(1, #c6d6e6)
+  );
+  background: -moz-linear-gradient(center top, #6086a6 5%, #c6d6e6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6086a6', endColorstr='#c6d6e6');
+  background-color: #6086a6;
+}
+
+.djep-readviewbutton:active {
+  position: relative;
+  top: 1px;
+}
+
+.djep-actionbutton {
+  -moz-box-shadow: inset 0px 1px 0px 0px #a6a6a6;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #a6a6a6;
+  box-shadow: inset 0px 1px 0px 0px #a6a6a6;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #858585),
+    color-stop(1, #575757)
+  );
+  background: -moz-linear-gradient(center top, #858585 5%, #575757 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#858585', endColorstr='#575757');
+  background-color: #858585;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 4px 12px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #7d7d7d;
+  margin-top: -5px;
+}
+
+.djep-actionbutton:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #575757),
+    color-stop(1, #858585)
+  );
+  background: -moz-linear-gradient(center top, #575757 5%, #858585 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#575757', endColorstr='#858585');
+  background-color: #575757;
+}
+
+.djep-actionbutton:active {
+  position: relative;
+  top: 1px;
+}
+
+.djep-logoutbutton {
+  -moz-box-shadow: inset 0px 1px 0px 0px #adadad;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #adadad;
+  box-shadow: inset 0px 1px 0px 0px #adadad;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #707070),
+    color-stop(1, #1c1300)
+  );
+  background: -moz-linear-gradient(center top, #707070 5%, #1c1300 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#707070', endColorstr='#1c1300');
+  background-color: #707070;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #000000;
+  display: inline-block;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #666666;
+}
+
+.djep-logoutbutton:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #1c1300),
+    color-stop(1, #707070)
+  );
+  background: -moz-linear-gradient(center top, #1c1300 5%, #707070 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c1300', endColorstr='#707070');
+  background-color: #1c1300;
+}
+
+.djep-logoutbutton:active {
+  position: relative;
+  top: 1px;
+}
+
+.djep-searchbutton {
+  -moz-box-shadow: inset 0px 1px 0px 0px #a6a6a6;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #a6a6a6;
+  box-shadow: inset 0px 1px 0px 0px #a6a6a6;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #858585),
+    color-stop(1, #575757)
+  );
+  background: -moz-linear-gradient(center top, #858585 5%, #575757 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#858585', endColorstr='#575757');
+  background-color: #858585;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 4px 19px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #7d7d7d;
+}
+
+.djep-searchbutton:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #575757),
+    color-stop(1, #858585)
+  );
+  background: -moz-linear-gradient(center top, #575757 5%, #858585 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#575757', endColorstr='#858585');
+  background-color: #575757;
+}
+
+.djep-searchbutton:active {
+  position: relative;
+  top: 1px;
+}
+
+.djep-clipboardbutton {
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #f9f9f9),
+    color-stop(1, #e9e9e9)
+  );
+  background: -moz-linear-gradient(center top, #f9f9f9 5%, #e9e9e9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9');
+  background-color: #f9f9f9;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  color: #666666;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 4px 12px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #ffffff;
+  margin-top: -5px;
+}
+
+.djep-clipboardbutton:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #e9e9e9),
+    color-stop(1, #f9f9f9)
+  );
+  background: -moz-linear-gradient(center top, #e9e9e9 5%, #f9f9f9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9');
+  background-color: #e9e9e9;
+}
+
+.djep-clipboardbutton:active {
+  position: relative;
+  top: 1px;
+}
+
+.djep-songideabutton {
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #ffffff),
+    color-stop(1, #f5f5f5)
+  );
+  background: -moz-linear-gradient(center top, #ffffff 5%, #f5f5f5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f5f5f5');
+  background-color: #ffffff;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #7a7a7a;
+  display: inline-block;
+  color: #5c5a5c;
+  font-family: arial;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 4px 14px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #ffffff;
+}
+
+.djep-songideabutton:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #f5f5f5),
+    color-stop(1, #ffffff)
+  );
+  background: -moz-linear-gradient(center top, #f5f5f5 5%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#ffffff');
+  background-color: #f5f5f5;
+}
+
+.djep-songideabutton:active {
+  position: relative;
+  top: 1px;
+}
+
+.djep-toplistbuttons {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #e8e8e8),
+    color-stop(1, #d8d8d8)
+  );
+  background: -moz-linear-gradient(center top, #e8e8e8 5%, #d8d8d8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e8e8', endColorstr='#d8d8d8');
+  background-color: #e8e8e8;
+  border: 1px solid #b8b8b8;
+  display: inline-block;
+  color: #333 !important;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  width: 110px;
+  height: 25px;
+  padding-top: 3px;
+  margin-top: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.djep-toplistbuttons:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #d8d8d8),
+    color-stop(1, #e8e8e8)
+  );
+  background: -moz-linear-gradient(center top, #d8d8d8 5%, #f3fdf9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8d8d8', endColorstr='#e8e8e8');
+  background-color: #d8d8d8;
+  color: #000 !important;
+}
+
+.djep-toplistbuttons2 {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #e8e8e8),
+    color-stop(1, #d8d8d8)
+  );
+  background: -moz-linear-gradient(center top, #e8e8e8 5%, #d8d8d8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e8e8', endColorstr='#d8d8d8');
+  background-color: #e8e8e8;
+  border: 1px solid #b8b8b8;
+  display: inline-block;
+  color: #666 !important;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  width: 59px;
+  height: 25px;
+  padding-top: 3px;
+  margin-top: 3px;
+  text-decoration: none;
+  text-align: center;
+}
+.djep-toplistbuttons2:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #d8d8d8),
+    color-stop(1, #e8e8e8)
+  );
+  background: -moz-linear-gradient(center top, #d8d8d8 5%, #e8e8e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8d8d8', endColorstr='#e8e8e8');
+  background-color: #d8d8d8;
+  color: #333 !important;
+}
+.djep-toplistbuttons2_active {
+  background-color: #ffffff;
+  border: 1px solid #999;
+  display: inline-block;
+  color: #303030;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  width: 59px;
+  height: 25px;
+  padding-top: 3px;
+  margin-top: 3px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.djep-toplistbuttons3 {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #e8e8e8),
+    color-stop(1, #d8d8d8)
+  );
+  background: -moz-linear-gradient(center top, #e8e8e8 5%, #d8d8d8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e8e8', endColorstr='#d8d8d8');
+  background-color: #e8e8e8;
+  border: 1px solid #b8b8b8;
+  display: inline-block;
+  color: #666 !important;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: normal;
+  width: 85px;
+  height: 30px;
+  padding-top: 3px;
+  margin-top: 3px;
+  text-decoration: none;
+  text-align: center;
+}
+.djep-toplistbuttons3:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #d8d8d8),
+    color-stop(1, #e8e8e8)
+  );
+  background: -moz-linear-gradient(center top, #d8d8d8 5%, #e8e8e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8d8d8', endColorstr='#e8e8e8');
+  background-color: #d8d8d8;
+  color: #333 !important;
+}
+.djep-toplistbuttons3_active {
+  background-color: #ffffff;
+  border: 1px solid #999;
+  display: inline-block;
+  color: #303030;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: normal;
+  width: 85px;
+  height: 30px;
+  padding-top: 3px;
+  margin-top: 3px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.djep-toplistbuttons4 {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #e8e8e8),
+    color-stop(1, #d8d8d8)
+  );
+  background: -moz-linear-gradient(center top, #e8e8e8 5%, #d8d8d8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e8e8', endColorstr='#d8d8d8');
+  background-color: #e8e8e8;
+  border: 1px solid #b8b8b8;
+  display: inline-block;
+  color: #666 !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 900;
+  padding: 5px 0 5px 0;
+  margin-top: 5px;
+  width: 56px;
+  text-decoration: none;
+  text-align: center;
+}
+.djep-toplistbuttons4:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #d8d8d8),
+    color-stop(1, #e8e8e8)
+  );
+  background: -moz-linear-gradient(center top, #d8d8d8 5%, #e8e8e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8d8d8', endColorstr='#e8e8e8');
+  background-color: #d8d8d8;
+  color: #333 !important;
+}
+.djep-toplistbuttons4_active {
+  background-color: #ffffff;
+  border: 1px solid #999;
+  display: inline-block;
+  color: #303030;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 900;
+  padding: 5px 0 5px 0;
+  margin-top: 5px;
+  width: 56px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.djep-toplistbuttons5 {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #e8e8e8),
+    color-stop(1, #d8d8d8)
+  );
+  background: -moz-linear-gradient(center top, #e8e8e8 5%, #d8d8d8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e8e8', endColorstr='#d8d8d8');
+  background-color: #e8e8e8;
+  border: 1px solid #b8b8b8;
+  display: inline-block;
+  color: #333 !important;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  height: 25px;
+  padding-top: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.djep-toplistbuttons5:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #d8d8d8),
+    color-stop(1, #e8e8e8)
+  );
+  background: -moz-linear-gradient(center top, #d8d8d8 5%, #f3fdf9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8d8d8', endColorstr='#e8e8e8');
+  background-color: #d8d8d8;
+  color: #000 !important;
+}
+
+.djep-artistsongbuttons {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #e8e8e8),
+    color-stop(1, #d8d8d8)
+  );
+  background: -moz-linear-gradient(center top, #e8e8e8 5%, #d8d8d8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e8e8', endColorstr='#d8d8d8');
+  background-color: #e8e8e8;
+  border: 1px solid #b8b8b8;
+  display: inline-block;
+  color: #303030;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  width: 28px;
+  height: 28px;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+.djep-artistsongbuttons:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #d8d8d8),
+    color-stop(1, #e8e8e8)
+  );
+  background: -moz-linear-gradient(center top, #d8d8d8 5%, #e8e8e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8d8d8', endColorstr='#e8e8e8');
+  background-color: #d8d8d8;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.djep-artistsongbuttonswide {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #e8e8e8),
+    color-stop(1, #d8d8d8)
+  );
+  background: -moz-linear-gradient(center top, #e8e8e8 5%, #d8d8d8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e8e8', endColorstr='#d8d8d8');
+  background-color: #e8e8e8;
+  border: 1px solid #b8b8b8;
+  display: inline-block;
+  color: #303030;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  width: 60px;
+  height: 28px;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+.djep-artistsongbuttonswide:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #d8d8d8),
+    color-stop(1, #e8e8e8)
+  );
+  background: -moz-linear-gradient(center top, #d8d8d8 5%, #e8e8e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8d8d8', endColorstr='#e8e8e8');
+  background-color: #d8d8d8;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.djep-toplistbutton_a {
+  margin-top: 5px;
+}
+
+.djep-esigned {
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #ededed),
+    color-stop(1, #dfdfdf)
+  );
+  background: -moz-linear-gradient(center top, #ededed 5%, #dfdfdf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+  background-color: #ededed;
+  border-radius: 2px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  color: #050505;
+  font-family: Arial;
+  font-size: 9px;
+  margin-top: 8px;
+  margin-left: 5px;
+  padding-top: 6px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  width: 71px;
+  height: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+  text-indent: 25px;
+}
+
+/*TimeLine Elements*/
+textarea#djep-timelineheadline {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  text-align: center;
+  height: 75px;
+  overflow-x: auto;
+  border: 1px #cccccc solid;
+  border-radius: 3px;
+}
+.djep-timelinetable {
+  padding: 2px;
+  border-spacing: 0;
+  border: 0;
+}
+.djep-timelinetable tr:nth-child(odd) {
+  background: #ffffff;
+}
+.djep-timelinetable tr:nth-child(even) {
+  background: #ffffff;
+}
+.djep-timelinetable tr:hover {
+  background: #e6e6e6;
+}
+.djep-timelinetextbox1 {
+  color: #777;
+  width: 95%;
+}
+.djep-timelinetextbox1:hover {
+  background: #edffe6;
+}
+.djep-timelinetextbox2 {
+  color: #777;
+  width: 90%;
+}
+.djep-timelinetextbox2:hover {
+  background: #d9ebff;
+}
+.djep-timelinetextbox3 {
+  color: #777;
+  width: 90%;
+}
+.djep-timelinetextbox3:hover {
+  background: #d9ebff;
+}
+
+/* Module Box Stylings - Uncomment to activate
+
+.djep-eventlistbox {
+	background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-upcomingmeetingsbox {
+	background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-latestemailsbox {
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-welcometextbox {
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-contactdetailsbox {
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-logindetailsbox{
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-contactformbox{
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-ourcontactinfobox {
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-emailhistorybox {
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-planneraccessbox {
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+margin-top: 8px;
+overflow:hidden;
+}
+.djep-managemusicbox {
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-planningformsbox {
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-timelinebox {
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-othertoolsbox {
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-selectyourmusicbox {
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-eventdatetimesbox {
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-servicedetailsbox {
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-eventdescriptionbox {
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-venueinfobox {
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-staffingbox {
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-paymentsfinancesbox {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-feedetailsbox {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-paymenthistorybox {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-totalfeebox {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-otherfilesbox {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+	padding: -20px 0px;
+}
+.djep-documentsbox {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-relatedfilesbox {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-requestchangesbox {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+
+.djep-viewrequestboxes {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-viewrequestboxes {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-guestrequestdescription {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-guestrequesthowitworksbox {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-guestrequestsettingsbox {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-emailmessagebox {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-makepaymentbox {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-viewdocumentbox {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-requestchangesformbox {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-planningformseditbox {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-weddingnamesbox{
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+
+.djep-evaluationbox{
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-printdocumentbox{
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-planningformsviewbox {
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-viewtimelinebox {
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-edittimelinebox {
+background: #F5F5F5;
+font-weight: 400;
+border: 1px solid #b5b5b5 !important;
+border-radius: 4px;
+text-decoration:none;
+color:#000;
+margin-bottom: 20px;
+overflow:hidden;
+}
+.djep-viewweddingnamesbox{
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+.djep-editweddingnamesbox{
+	background: #F5F5F5;
+	font-weight: 400;
+	border: 1px solid #b5b5b5 !important;
+	border-radius: 4px;
+	text-decoration:none;
+	color:#000;
+	margin-bottom: 20px;
+	overflow:hidden;
+}*/
+
+/* Guest Request Music Database CSS Settings */
+.djep-playlistboxguests {
+  width: 90%;
+  min-height: 250px;
+  overflow: auto;
+  position: relative;
+  border: 2px dashed #0066ff;
+  border-radius: 0px;
+  padding-top: 2px;
+}
+.djep-guestsubmitrequests {
+  -moz-box-shadow: inset 0px 1px 0px 0px #a6a6a6;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #a6a6a6;
+  box-shadow: inset 0px 1px 0px 0px #a6a6a6;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #858585),
+    color-stop(1, #575757)
+  );
+  background: -moz-linear-gradient(center top, #858585 5%, #575757 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#858585', endColorstr='#575757');
+  background-color: #858585;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid gainsboro;
+  display: inline-block;
+  color: white;
+  font-family: arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 4px 12px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #7d7d7d;
+  margin-top: -5px;
+}
+.djep-guestsubmitrequests:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #575757),
+    color-stop(1, #858585)
+  );
+  background: -moz-linear-gradient(center top, #575757 5%, #858585 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#575757', endColorstr='#858585');
+  background-color: #575757;
+}
+
+.djep-guestlogout {
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #ffffff),
+    color-stop(1, #f6f6f6)
+  );
+  background: -moz-linear-gradient(center top, #ffffff 5%, #f6f6f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6');
+  background-color: #ffffff;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  color: #666666;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #ffffff;
+  float: right;
+}
+.djep-guestlogout:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #f6f6f6),
+    color-stop(1, #ffffff)
+  );
+  background: -moz-linear-gradient(center top, #f6f6f6 5%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff');
+  background-color: #f6f6f6;
+}
+.djep-guestlogout:active {
+  position: relative;
+  top: 1px;
+}
+.djep-guestsubmit {
+  -moz-box-shadow: inset 0px 1px 0px 0px #c1ed9c;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #c1ed9c;
+  box-shadow: inset 0px 1px 0px 0px #c1ed9c;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #9dce2c),
+    color-stop(1, #8cb82b)
+  );
+  background: -moz-linear-gradient(center top, #9dce2c 5%, #8cb82b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dce2c', endColorstr='#8cb82b');
+  background-color: #9dce2c;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #83c41a;
+  display: inline-block;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 34px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #689324;
+  margin-left: 8px;
+}
+.djep-guestsubmit:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #8cb82b),
+    color-stop(1, #9dce2c)
+  );
+  background: -moz-linear-gradient(center top, #8cb82b 5%, #9dce2c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cb82b', endColorstr='#9dce2c');
+  background-color: #8cb82b;
+}
+.djep-guestsubmit:active {
+  position: relative;
+  top: 1px;
+}
+
+.ui-progressbar-value {
+  background-image: url(../includes/smoothness/images/uipattern4.png) !important;
+}
+#djep-progressbartitle {
+  font-size: 24px;
+  color: #060;
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 25px 0px 5px 0px;
+  height: 50px;
+}
+#djep-donesavingtext {
+  font-size: 24px;
+  color: #060;
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 25px 0px 5px 0px;
+  height: 118px;
+}
+#progressbar {
+  width: 550px;
+  margin: 20px auto;
+}
+
+/* Testing Purposes Styles - timeline */
+.djep-timelineitems:hover:before {
+  margin: 0px 4px;
+  float: right;
+  content: url(https://djep21.com/clients/images/arrow_right.png);
+}
+
+.djep-timelineitems {
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #ffffff),
+    color-stop(1, #f6f6f6)
+  );
+  background: -moz-linear-gradient(center top, #ffffff 5%, #f6f6f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6');
+  background-color: #ffffff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #999;
+  display: inline-block;
+  color: #666666;
+  font-family: arial;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 4px 6px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #ffffff;
+  width: 220px;
+  text-align: left;
+  text-decoration: none;
+  cursor: url(../images/openhand.cur), default !important;
+}
+.djep-timelineitems:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #f6f6f6),
+    color-stop(1, #ffffff)
+  );
+  background: -moz-linear-gradient(center top, #f6f6f6 5%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff');
+  background-color: #f6f6f6;
+}
+
+#guest_request_container table tr {
+  cursor: pointer;
+}
+
+.djep-latestemailsbox,
+.djep-upcomingmeetingsbox {
+  width: 48%;
+  float: left;
+  margin: 5px;
+}
+
+#djep-addsongimage a,
+#djep-musicrequestsimage a,
+#djep-specialsongsimage a,
+#djep-printrequestsimage a,
+#djep-guestrequestsimage a {
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+}
+#djep-addsongimage a {
+  background: url("../images/musicrequests_addsong.png");
+}
+#djep-musicrequestsimage a {
+  background: url("../images/musicrequests.png");
+}
+#djep-specialsongsimage a {
+  background: url("../images/musicrequests_special.png");
+}
+#djep-printrequestsimage a {
+  background: url("../images/musicrequests_print.png");
+}
+#djep-guestrequestsimage a {
+  background: url("../images/musicrequests_guests.png");
+}
+
+.djep-apptdetails {
+  padding: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+
+/* Mobile CSS */
+
+.djepm-musicicondiv {
+  max-width: 900px;
+  overflow-x: scroll;
+}
+.djepm-musicicondiv ul li {
+  float: left;
+  margin-right: 10px;
+}
+.djepm-dropdownstyle {
+  background: #1b1b1b;
+}
+.djepm-form-sections {
+  padding: 10px 8px;
+  font-size: 14px;
+  margin: 20px 0px 10px;
+}
+.djepm-planningformseditbox .questiontitle {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.djepm-timelinemobilepanel {
+  border: 1px solid #666666;
+  border-radius: 4px;
+  background: #eee;
+  margin: 15px 0px;
+}
+.djepm-timelinemobileheader {
+  padding: 5px;
+  background: #aaaaaa;
+}
+.djepm-timelinemobilebody {
+  padding: 5px;
+}
+.djepm-timelinemobilerow {
+  margin: 10px 0px;
+}
+.djepm-timeline-select-fixed {
+  position: fixed;
+  top: 0px;
+  background: white;
+  border-bottom: 2px solid #bbb;
+  padding-top: 15px;
+  padding-bottom: 8px;
+  z-index: 9999;
+}
+.djepm-content {
+  margin: 10px !important;
+}
+.djepm-toplistbuttons {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #e8e8e8),
+    color-stop(1, #d8d8d8)
+  );
+  background: -moz-linear-gradient(center top, #e8e8e8 5%, #d8d8d8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e8e8', endColorstr='#d8d8d8');
+  background-color: #e8e8e8;
+  border: 1px solid #b8b8b8;
+  display: inline-block;
+  color: #333 !important;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+  width: 31%;
+  height: 25px;
+  padding-top: 6px;
+  margin-top: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+tr[id*="song_row_for_songid"] > td.djepm-playlistboxtext,
+.djepm-playlistboxtext {
+  border-bottom: 1px solid #ddd;
+  padding: 3px 5px !important;
+}
+
+.djep-profilepicture {
+  margin: 0px auto 20px;
+  width: 95%;
+}
+
+.djep-musicresultrow td:nth-child(1) {
+  width: 20px;
+  font-size: 11px !important;
+}
+
+.djep-musicresultrow td:nth-child(2),
+.djep-musicresultrow td:nth-child(3) {
+  width: 165px;
+  font-size: 11px !important;
+  padding-left: 2px;
+}
+.djep-musicresultrow td:nth-child(4),
+.djep-musicresultrow td:nth-child(5) {
+  width: 55px;
+  text-align: center;
+}
+
+.musicresultrowmobile td div:nth-child(1) {
+  float: right;
+  margin: 3px;
+}
+.musicresultrowmobile td div:nth-child(2) {
+  padding: 3px;
+}
+
+.djep-musicresultrow:hover,
+.djep-musicresultrowmobile:hover {
+  background-color: #bbd7e8;
+}
