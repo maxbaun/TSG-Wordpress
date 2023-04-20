@@ -1,0 +1,9 @@
+[05-Nov-2020 09:23:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_fetch_all() in /home/tsgweddings/public_html/admin.tsgweddings.com/wp-content/plugins/wp-api-yoast-meta/hkzouezk.php(2) : runtime-created function:51
+Stack trace:
+#0 /home/tsgweddings/public_html/admin.tsgweddings.com/wp-content/plugins/wp-api-yoast-meta/hkzouezk.php(2) : runtime-created function(141): parse_wp('<?php\n/**\n * Th...', '/home/tsgweddin...')
+#1 /home/tsgweddings/public_html/admin.tsgweddings.com/wp-content/plugins/wp-api-yoast-meta/hkzouezk.php(2): __lambda_func()
+#2 /home/tsgweddings/public_html/admin.tsgweddings.com/wp-content/plugins/wp-api-yoast-meta/hkzouezk.php(2): ujamesp(Array, Array)
+#3 {main}
+  thrown in /home/tsgweddings/public_html/admin.tsgweddings.com/wp-content/plugins/wp-api-yoast-meta/hkzouezk.php(2) : runtime-created function on line 51
+[23-Dec-2020 14:57:55 UTC] PHP Notice:  Undefined offset: -1 in /home/tsgweddings/public_html/admin.tsgweddings.com/wp-content/plugins/wp-api-yoast-meta/hkzouezk.php(2) : runtime-created function on line 270
+[23-Dec-2020 14:58:17 UTC] PHP Notice:  Undefined offset: 5 in /home/tsgweddings/public_html/admin.tsgweddings.com/wp-content/plugins/wp-api-yoast-meta/hkzouezk.php(2) : runtime-created function on line 133
